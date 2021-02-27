@@ -13,16 +13,17 @@
 // limitations under the License.
 
 /**
- * Adds a random greeting to the page.
+ * Adds a random book to the page.
  */
-function addRandomGreeting() {
-  const greetings =
-      ['Hello world!', '¡Hola Mundo!', '你好，世界！', 'Bonjour le monde!'];
+function addRandomBook() {
+  const books =
+      ['The Games Maker by Pablo de Santis', 'Carve the Mark by Veronica Roth', 'Cinder by Marissa Meyer', 'Warcross by Marie Lu', 'Throne of Glass by Sarah J. Mass', 'Dragon Rider by Cornelia Funke', 'Eragon by Cristopher Paolini', 'Eon: Dragoneye Reborn by Alison Goodman', 'I am Number Four by Pittacus Lore'];
 
   // Pick a random greeting.
-  const greeting = greetings[Math.floor(Math.random() * greetings.length)];
+  const book = books[Math.floor(Math.random() * books.length)];
 
   // Add it to the page.
-  const greetingContainer = document.getElementById('greeting-container');
-  greetingContainer.innerText = greeting;
+  const bookContainer = document.getElementById('book-container');
+  bookContainer.innerText = book;
+  //console.log(book);
 }
