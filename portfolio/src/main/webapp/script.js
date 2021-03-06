@@ -27,3 +27,10 @@ function addRandomBook() {
   bookContainer.innerText = book;
   //console.log(book);
 }
+
+async function showRandomSong(){
+    const responseServ = await fetch('/rand-song');
+    const textResp = await responseServ.text();
+    const song = document.getElementById('song-container');
+    song.innerText = textResp;
+}
