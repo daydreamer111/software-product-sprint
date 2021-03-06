@@ -30,7 +30,9 @@ function addRandomBook() {
 
 async function showRandomSong(){
     const responseServ = await fetch('/rand-song');
-    const textResp = await responseServ.text();
+    const respObj = await responseServ.json();
+    const textRespObj = respObj[Math.floor(Math.random() * respObj.length)];
+    const textResp = textRespObj.song + " - " + textRespObj.artist;
     const song = document.getElementById('song-container');
     song.innerText = textResp;
 }
