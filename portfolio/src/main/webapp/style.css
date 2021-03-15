@@ -1,9 +1,72 @@
-#content {
-  margin-left: auto;
-  margin-right: auto;
-  width: 650px;
+/* General */
+body, h1{
+    border: 0;
+    margin: 0;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 650px;
+}
+header{
+    text-align: center;
+    font-size: large;
+    background-color: darkblue;
+    color: white;
+}
+header a{
+    padding: 10px;
+    color: white;
+}
+#content{
+    background-color: lightblue;
+}
+.random-info{
+    text-align: center;
 }
 
-#greeting-container {
-  margin-top: 20px;
+/* Gallery and images */
+#gallery {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 650px;
+    text-align: center;
+}
+#gallery img{
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    display: inline-block;
+}
+img{
+  max-width: 350px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+#baby-yuki{
+    max-width: 300px;
+    max-height: 225px;
+}
+
+/* Buttons */
+form{
+    display: inline;
+}
+button{
+    background-color: cornflowerblue;
+    font-size: medium;
+    color: white;
+}
+header button{
+    background-color: none;
+    font-size: medium;
+    color: blue;
+    border: 0;
+}
+header select{
+    background-color: darkcyan;
+    font-size: medium;
+    color: white;
+    padding: 10px;
 }
